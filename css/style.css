@@ -10,8 +10,6 @@ nav{
 
     padding: 20px 60px;
 
-    position: 20px 60px;
-
     position: absolute;
     top: 0;
     width: 100%;
@@ -20,6 +18,22 @@ nav{
     z-index: 10;
     background: transparent;
 }
+nav a{
+    color:white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color:green
+}
+
+nav a{
+    font-weight: bold;
+}
+
 .logo{
     display: flex;
     align-items: center;
@@ -66,9 +80,10 @@ nav button:hover{
 .hero{
     height: 100vh;
     
-    background-image: url('../images/price stock.jpg');
-    background-size: cover;
-    background-position: center top;
+    background-image: url('../images/hero image.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
 
     display: flex;
     align-items: center;
@@ -85,7 +100,7 @@ nav button:hover{
 
 .hero-content{
     margin-left: 80px;
-    margin-top: 40px;
+    margin-top: 0px;
     color: white;
 
     position: relative;
@@ -96,16 +111,23 @@ nav button:hover{
 }
 
 .hero-content h1{
-    font-size: 65px;
+    font-size: 60px;
     line-height: 1.1;
-    margin-bottom: 15px 0;
+    margin: 15px 0;
     font-weight: 700;
 }
 
 .hero-content p{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 20px;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.subtitle{
+    font-size: 18px;
+    font-weight:bold;
+    margin: 0 0 15px 0;
 }
 .hero-content button{
     padding: 16px 30px;
