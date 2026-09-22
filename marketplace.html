@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoLand Marketplace</title>
+
+    <link rel="stylesheet" href="css/marketplace.css">
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/eco land logo.png" alt="EcoLand Logo">
+        </a>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <button id="cartButton">
+        🛒 Cart (<span id="cartCount">0</span>)
+    </button>
+
+</nav>
+
+
+<section class="marketplace-hero">
+
+    <div class="marketplace-hero-content">
+
+        <p>OUR MARKETPLACE</p>
+
+        <h1>Fresh Products From Our Farms</h1>
+
+        <p>
+            Discover fresh and quality agricultural products
+            available from EcoLand.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="products-section">
+
+    <div class="products-heading">
+
+        <p>OUR PRODUCTS</p>
+
+        <h2>Fresh From The Farm</h2>
+
+        <p>
+            Explore some of our quality agricultural products.
+        </p>
+
+    </div>
+
+
+    <div class="product-cards">
+
+
+        <!-- MAIZE -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="images/fresh maize.jpg" alt="Fresh Maize">
+            </div>
+
+            <h3>Fresh Maize</h3>
+
+            <p>Fresh and quality maize from our farms.</p>
+
+            <p class="price">₦2,500</p>
+
+            <button
+                class="add-to-cart"
+                data-name="Fresh Maize"
+                data-price="2500">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <!-- CASSAVA -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="images/fresh cassava.jpg" alt="Fresh Cassava">
+            </div>
+
+            <h3>Fresh Cassava</h3>
+
+            <p>
+                Quality cassava suitable for different
+                agricultural needs.
+            </p>
+
+            <p class="price">₦3,000</p>
+
+            <button
+                class="add-to-cart"
+                data-name="Fresh Cassava"
+                data-price="3000">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <!-- VEGETABLES -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+                <img src="images/fresh vegetable.jpg" alt="Fresh Vegetables">
+            </div>
+
+            <h3>Fresh Vegetables</h3>
+
+            <p>
+                Fresh vegetables produced with care.
+            </p>
+
+            <p class="price">₦1,500</p>
+
+            <button
+                class="add-to-cart"
+                data-name="Fresh Vegetables"
+                data-price="1500">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CART -->
+
+<div id="cartPanel" class="cart-panel">
+
+    <div class="cart-header">
+
+        <h2>Your Cart</h2>
+
+        <button id="closeCart">×</button>
+
+    </div>
+
+    <div id="cartItems">
+
+        <p>Your cart is empty.</p>
+
+    </div>
+
+    <div class="cart-total">
+
+        <strong>Total:</strong>
+
+        <span id="cartTotal">₦0</span>
+
+    </div>
+
+    <button id="clearCart" class="clear-cart">
+        Clear Cart
+    </button>
+
+</div>
+
+
+<footer class="footer">
+
+    <div class="footer-bottom">
+
+        <p>© 2026 EcoLand. All Rights Reserved.</p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

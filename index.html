@@ -1,51 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>EcoLand</title>
 
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
+    <!-- NAVIGATION -->
     <nav>
+
         <div class="logo">
-            <img src="images/eco land logo.png" alt="EcoLand logo">
+            <a href="index.html">
+                <img src="images/eco land logo.png" alt="EcoLand Logo">
+            </a>
         </div>
+
         <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Essential Pages</li>
-            <li>Shop</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="marketplace.html">Marketplace</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-        <button>
-            Get Started Now
-        </button>
+
+        <a href="contact.html">
+            <button>Get Started Now</button>
+        </a>
+
     </nav>
 
-    <section class="hero">
-            <div class="hero-overlay"></div>
-         <div class="hero-content">
 
-             <p class="subtitle">We are Producing Natural Products</p>
-          
-             <h1>
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="subtitle">
+                We are Producing Natural Products
+            </p>
+
+            <h1>
                 Organic Farming<br>
                 and Agriculture
             </h1>
 
             <p>
-                we are comitted to providing fresh and healthy agricultural products. 
+                We are committed to providing fresh and healthy
+                agricultural products.
             </p>
 
-            <button>
+            <button id="discoverButton">
                 Discover More
             </button>
+
         </div>
+
     </section>
+
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-us">
+
+        <div class="why-text">
+
+            <p class="section-subtitle">
+                Why Choose Us
+            </p>
+
+            <h2>
+                Growing a Better Future Through Agriculture
+            </h2>
+
+            <p>
+                At EcoLand, we are committed to providing fresh,
+                healthy and quality agricultural products while
+                supporting sustainable farming practices.
+            </p>
+
+            <a href="about.html" class="learn-more">
+                Learn More →
+            </a>
+
+        </div>
+
+
+        <div class="why-cards">
+
+            <div class="why-card">
+
+                <div class="icon">🌱</div>
+
+                <h3>
+                    Natural Products
+                </h3>
+
+                <p>
+                    We provide fresh and naturally grown
+                    agricultural products.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="icon">🌾</div>
+
+                <h3>
+                    Quality Farming
+                </h3>
+
+                <p>
+                    We use responsible farming practices
+                    to produce quality crops.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="icon">🚜</div>
+
+                <h3>
+                    Modern Agriculture
+                </h3>
+
+                <p>
+                    We combine modern technology with
+                    traditional agricultural knowledge.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- OUR PRODUCTS -->
+    <section class="products">
+
+        <div class="products-heading">
+
+            <p class="section-subtitle">
+                Our Products
+            </p>
+
+            <h2>
+                Fresh Products From Our Farms
+            </h2>
+
+            <p>
+                We provide fresh and quality agricultural products
+                carefully produced to meet the needs of our customers.
+            </p>
+
+        </div>
+
+
+        <div class="product-cards">
+
+            <!-- PRODUCT 1 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="images/fresh maize.jpg"
+                        alt="Fresh Maize">
+                </div>
+
+                <h3>
+                    Fresh Maize
+                </h3>
+
+                <p>
+                    Quality maize is produced through responsible
+                    and sustainable farming practices.
+                </p>
+
+                <a href="marketplace.html">
+                    View Product →
+                </a>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="images/fresh cassava.jpg"
+                        alt="Fresh Cassava">
+                </div>
+
+                <h3>
+                    Cassava
+                </h3>
+
+                <p>
+                    Fresh and healthy cassava suitable for different
+                    agricultural and food purposes.
+                </p>
+
+                <a href="marketplace.html">
+                    View Product →
+                </a>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="images/fresh vegetable.jpg"
+                        alt="Fresh Vegetable">
+                </div>
+
+                <h3>
+                    Fresh Vegetables
+                </h3>
+
+                <p>
+                    Fresh vegetables grown with care to provide
+                    quality and healthy food products.
+                </p>
+
+                <a href="marketplace.html">
+                    View Product →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="js/script.js"></script>
 
 </body>
 

@@ -1,0 +1,522 @@
+/*  GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* SERVICE HERO */
+
+.service-hero {
+    min-height: 70vh;
+    position: relative;
+
+    background-image: url("../images/service-hero.jpg");
+    background-size: 50% 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+
+    background-color: mintcream;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/* IMAGE OVERLAY */
+
+.service-hero-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 50%;
+    height: 100%;
+
+    background-color: black;
+    opacity: 0.08;
+
+    z-index: 1;
+}
+
+
+/* HERO TEXT */
+
+.service-hero-content {
+    width: 50%;
+
+    margin: 0;
+    padding: 60px 7%;
+
+    color: darkgreen;
+
+    position: relative;
+    z-index: 2;
+}
+
+.service-hero-content p:first-child {
+    color: seagreen;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.service-hero-content h1 {
+    font-size: 50px;
+    color: darkgreen;
+    margin: 0 0 25px;
+}
+
+.service-hero-content p:last-child {
+    color: gray;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 600px;
+}
+
+
+/* OUR SERVICES */
+
+.services-section {
+    padding: 80px 8%;
+    background-color: seagreen;
+    text-align: center;
+}
+
+.services-heading {
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+
+.section-subtitle {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.services-heading h2 {
+    font-size: 40px;
+    color: whitesmoke;
+    margin: 10px 0 15px;
+}
+
+.services-heading p:not(.section-subtitle) {
+    color: whitesmoke;
+    line-height: 1.7;
+}
+
+
+/* SERVICE CARDS */
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* SERVICE IMAGES */
+
+.service-image {
+    width: 100px;
+    height: 80px;
+    margin: 0 auto 15px;
+
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* SERVICE TEXT */
+
+.service-card h3 {
+    color: darkgreen;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: seagreen;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.service-card a {
+    color: seagreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.service-card a:hover {
+    color: darkgreen;
+}
+
+
+/* WHY CHOOSE ECOLAND  */
+
+.why-ecoland {
+    padding: 80px 10%;
+    background-color: white;
+
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.why-ecoland-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.why-ecoland-text h2 {
+    font-size: 40px;
+    color: darkgreen;
+    margin: 10px 0 20px;
+}
+
+.why-ecoland-text > p:not(.section-subtitle) {
+    color: gray;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+
+/* WHY BUTTON */
+
+.why-button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background-color: seagreen;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 30px;
+
+    font-weight: bold;
+}
+
+.why-button:hover {
+    background-color: darkgreen;
+}
+
+
+/* WHY POINTS */
+
+.why-ecoland-points {
+    flex: 1;
+    max-width: 500px;
+}
+
+.why-point {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.why-point span {
+    font-size: 35px;
+    flex-shrink: 0;
+}
+
+.why-point h3 {
+    color: darkgreen;
+    margin: 0 0 8px;
+}
+
+.why-point p {
+    color: gray;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: dimgray;
+    color: white;
+
+    padding: 60px 8% 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 70px;
+}
+
+.footer-content > div {
+    min-width: 0;
+}
+
+.footer h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.footer h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: lightgray;
+    line-height: 1.7;
+}
+
+.footer-about {
+    max-width: 350px;
+}
+
+
+/* FOOTER LINKS */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: lightgreen;
+}
+
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+    border-top: 1px solid gray;
+
+    margin-top: 40px;
+    padding-top: 20px;
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    /* HERO */
+
+    .service-hero {
+        min-height: 70vh;
+
+        background-size: cover;
+        background-position: left center;
+
+        justify-content: center;
+    }
+
+    .service-hero-overlay {
+        background-color: darkgreen;
+        opacity: 0.75;
+    }
+
+    .service-hero-content {
+        width: 85%;
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .service-hero-content h1 {
+        font-size: 36px;
+    }
+
+
+    /* SERVICES */
+
+    .services-section {
+        padding: 60px 6%;
+    }
+
+    .services-heading h2 {
+        font-size: 32px;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* WHY CHOOSE */
+
+    .why-ecoland {
+        flex-direction: column;
+        gap: 40px;
+        padding: 60px 8%;
+        align-items: flex-start;
+    }
+
+    /* FOOTER */
+    .footer{
+        padding: 50px 30px 20px;
+    }
+
+    .footer-content{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* =========================
+   HERO TEXT ANIMATION
+========================= */
+
+/* WHAT WE DO */
+.service-hero-content p:first-child {
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 0.3s;
+}
+
+/* OUR AGRICULTURAL SERVICES */
+.service-hero-content h1 {
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 0.8s;
+}
+
+/* DESCRIPTION */
+.service-hero-content p:last-child {
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 1.3s;
+}
+
+
+/* ANIMATION */
+
+@keyframes fadeSlideUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* SERVICE CARD ANIMATION */
+
+.service-card {
+    opacity: 0;
+    animation: cardFadeUp 0.8s ease forwards;
+}
+
+.service-card:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.service-card:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.service-card:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+@keyframes cardFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* WHY CHOOSE ANIMATION */
+
+.why-ecoland-text {
+    animation: fadeLeft 1s ease;
+}
+
+.why-point {
+    animation: fadeRight 1s ease;
+}
+
+.why-point:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.why-point:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.why-point:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
